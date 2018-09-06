@@ -1,0 +1,32 @@
+public class ThreeAndFiveTest {
+	
+	public static final String THREE_MULTIPLE = "Fizz";
+	public static final String FIVE_MULTIPLE = "Buzz";
+	public static final String THREE_FIVE_MULTIPLE = "FizzBuzz";
+	public static final int THREE = 3;
+	public static final int FIVE = 5;
+	public static final int FIFTHEEN = 15;
+
+	public static void main(String[] args) {
+		getResultOfDivision1(100);
+	}
+	
+	public static void getResultOfDivision1(int num) {
+		for(int i=1;i<=num;i++) {
+			if(i % FIFTHEEN == 0) {
+				print(THREE_FIVE_MULTIPLE);
+			} else if(i % FIVE == 0) {
+				print(FIVE_MULTIPLE);
+			} else if(i % THREE == 0) {
+				print(THREE_MULTIPLE);
+			} else {
+				print(i);
+			}
+		}
+	}
+	
+	public static void print(Object str) {
+		System.out.println(str);
+	}
+
+}
